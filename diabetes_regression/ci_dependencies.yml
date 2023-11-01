@@ -13,6 +13,7 @@ dependencies:
   - r-essentials=3.6.0
 
   - conda-forge::jq
+  - conda-forge::nodejs
   - pip=20.0.*
 
   - pip:
