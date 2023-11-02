@@ -3,7 +3,8 @@
 resources:
   containers:
   - container: mlops
-    image: mcr.microsoft.com/mlops/python:latest
+    #image: mcr.microsoft.com/mlops/python:latest
+    image: node
 
 pr: none
 trigger:
@@ -29,7 +30,7 @@ stages:
   jobs:
   - job: "Model_CI_Pipeline"
     displayName: "Model CI Pipeline"
-    container: mlops
+    #container: mlops
     timeoutInMinutes: 0
     steps:
     #- template: code-quality-template.yml
