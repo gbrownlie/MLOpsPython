@@ -21,7 +21,8 @@ variables:
 - template: diabetes_regression-variables-template.yml
 - group: devopsforai-aml-vg
 
-pool: Local
+pool: 
+  vmImage: 'ubuntu-latest'
 
 stages:
 - stage: 'Model_CI'
