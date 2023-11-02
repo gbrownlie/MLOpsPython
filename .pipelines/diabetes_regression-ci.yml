@@ -3,8 +3,8 @@
 resources:
   containers:
   - container: mlops
-    #image: mcr.microsoft.com/mlops/python:latest
-    image: node
+    image: mcr.microsoft.com/mlops/python:latest
+    #image: node
 
 pr: none
 trigger:
@@ -33,7 +33,7 @@ stages:
     container: mlops
     timeoutInMinutes: 0
     steps:
-    #- template: code-quality-template.yml
+    - template: code-quality-template.yml
     - task: AzureCLI@1
       inputs:
         azureSubscription: '$(WORKSPACE_SVC_CONNECTION)'
