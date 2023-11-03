@@ -1,4 +1,5 @@
 # Continuous Integration (CI) pipeline that orchestrates the deployment of the diabetes_regression model.
+pool: Local
 
 # Runtime parameters to select artifacts
 parameters:
